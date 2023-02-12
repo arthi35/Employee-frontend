@@ -9,7 +9,7 @@ const EmployeeList = () => {
   },[])
   const getAllEmployees=async()=>{
     try{
-const response=await axios.get('http://localhost:5000/employees')
+const response=await axios.get('https://calm-rose-alligator-cap.cyclic.app/employees')
 setEmployees(response.data);
     }catch(err){
       console.log('Error',err)
@@ -18,7 +18,7 @@ setEmployees(response.data);
 
   const handleDelete=async(empID)=>{
 try{
-const response=await axios.delete(`http://localhost:5000/employees/${empID}`)
+const response=await axios.delete(`https://calm-rose-alligator-cap.cyclic.app/${empID}`)
 if(response){
   getAllEmployees();
 

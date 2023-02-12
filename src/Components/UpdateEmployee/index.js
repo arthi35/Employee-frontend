@@ -18,7 +18,7 @@ const UpdateEmployee = () => {
 
     useEffect(() => {
         const empID = params.empID.toString();
-        axios.get(`http://localhost:5000/employees/${empID}`).then(response => {
+        axios.get(`https://calm-rose-alligator-cap.cyclic.app/employees/${empID}`).then(response => {
             setEmployeeDetails(response.data[0]);
             console.log(response)
         }).catch(err => {
@@ -33,7 +33,7 @@ const UpdateEmployee = () => {
         const empID = params.empID.toString();
         const updateEmployee = {...employeeDetails};
         try{
-            const response = await axios.put(`http://localhost:5000/employees/${empID}`, updateEmployee);
+            const response = await axios.put(`https://calm-rose-alligator-cap.cyclic.app/employees/${empID}`, updateEmployee);
             if(response){
                 setEmployeeDetails({
                     name: '',

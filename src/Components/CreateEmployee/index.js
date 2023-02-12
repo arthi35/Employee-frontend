@@ -20,7 +20,7 @@ const CreateEmployee = () => {
         event.preventDefault();
         const newEmployee = {...employeeDetails};
         try{
-            const response = await axios.post('http://localhost:5000/employees', newEmployee);
+            const response = await axios.post('https://calm-rose-alligator-cap.cyclic.app/employees', newEmployee);
             if(response){
                 setEmployeeDetails({
                     name: '',
