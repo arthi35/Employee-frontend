@@ -33,7 +33,7 @@ const UpdateEmployee = () => {
         const empID = params.empID.toString();
         const updateEmployee = {...employeeDetails};
         try{
-            const response = await axios.put(`https://calm-rose-alligator-cap.cyclic.app/employees/${empID}`, updateEmployee);
+            const response = await axios.put(`http://locahost:5000/${empID}`, updateEmployee);
             if(response){
                 setEmployeeDetails({
                     name: '',
