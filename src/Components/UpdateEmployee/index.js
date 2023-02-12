@@ -33,7 +33,7 @@ const UpdateEmployee = () => {
         const empID = params.empID.toString();
         const updateEmployee = {...employeeDetails};
         try{
-            const response = await axios.put(`${process.env.REACT_APP_BASE_URL}/${empID}`, updateEmployee);
+            const response = await axios.put(`${process.env.REACT_APP_BASE_URL}/employees/${empID}`, updateEmployee);
             if(response){
                 setEmployeeDetails({
                     name: '',

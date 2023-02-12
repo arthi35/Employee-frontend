@@ -70,5 +70,3 @@ const EmployeeList = () => {
 }
 
 export default EmployeeList;
-//<NavLink className="btn btn-link" to="/employees/1/update">Edit</NavLink>
-//<button className="btn btn-link">Delete</button>
